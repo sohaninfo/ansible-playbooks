@@ -1,0 +1,8 @@
+- name: Deploy Oracle JDK 8
+  hosts: local
+  remote_user: root
+  vars_files:
+  - vars/v.yaml
+  roles:
+  - oraclejdk8
+  - tomcat8
